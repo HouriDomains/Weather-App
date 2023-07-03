@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Weather App</title>
+ 
+  <!-- HTML -->
+  <link rel="stylesheet" href="style.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="app">
+    <div class="search">
+      <input class="res" type="text" placeholder="Enter city name">
+      <button onclick="weatherData(searchInput.value)"><i class="bx bx-search-alt-2 bx-md"></i></button>
+    </div>
+    <div class="weather">
+      <img id="icon" src="https://placehold.co/64x64" alt="w-icon">
+      <h3 class="text">Rainy</h3>
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">Ilorin</h2>
+      <div class="details">
+        <div class="col">
+        <i class='bx bx-water bx-md'></i>
+          <p class="humidity">59%</p>
+          <p>Humidity</p>
+        </div>
+        <div class="col">
+          <i class='bx bx-wind bx-md'></i>
+          <p class="wind">23 km/h</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    ©<span id="year"></span> by Sanni Aliyu
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
