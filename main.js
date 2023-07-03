@@ -8,7 +8,6 @@ const searchBtn = document.querySelector('.search button');
 async function weatherData(city) {
   const response = await fetch(apiUrl+ city + '&key=' + apiKey);
   const data = await response.json();
-  console.log(data);
   
   document.querySelector('.weather').style.display='block';
   
